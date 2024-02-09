@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Login from "./Login";
 import Register from "./Registro";
+import formStyles from "../styles/formStyles.module.css"
 
 const IndexPage = () =>{
 
@@ -27,10 +28,10 @@ const IndexPage = () =>{
     return(
         <div>
             <br/>
-            <button onClick={handleLoginClick}>Iniciar sesion</button>
+            <button className={formStyles.button} onClick={handleLoginClick}>Iniciar sesion</button>
             {showLogin && <Login onClose={handleCloseLogin} />}
             <br/><br/>
-            <button onClick={handleRegisterClick}>Registro</button>
+            <button className={formStyles.button} onClick={handleRegisterClick}>Registro</button>
             {showRegister && <Register onClose={handleCloseRegister} />}
         </div>
     )

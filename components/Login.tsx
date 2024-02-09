@@ -13,22 +13,22 @@ const Login = ({onClose}:any) =>{
 return(
     <div className={formStyles.modal}>
         <div className={formStyles.modal_content}>
-            <h2>Inciar sesion</h2>
+            <h2>Inciar Sesion</h2>
             <label htmlFor="email">Correo: </label>
-            <input type="email" name="email" id="email" value={email} onChange={(e)=>{
+            <input className={formStyles.input} type="email" name="email" id="email" value={email} onChange={(e)=>{
                 e.preventDefault();
                 setEmail(e.target.value);
             }}/>
             <br />
             <label htmlFor="password">Contraseña: </label>
-            <input type="password" name="password" id="password"  value={password} onChange={(e)=>{
+            <input className={formStyles.input} type="password" name="password" id="password"  value={password} onChange={(e)=>{
                 e.preventDefault();
                 setPassword(e.target.value);
             }}/>
             <br />
-            <button onClick={handledLogin}>Iniciar sesion</button>
-            <p>¿No tienes cuenta?<Link href="/pages/registro">Registrese</Link></p>
-            <button onClick={onClose}>Cerrar</button>
+            <button  className={formStyles.button}  onClick={handledLogin}>Iniciar sesion</button>
+            <p>¿No tienes cuenta?<Link href="#">Registrese</Link></p>
+            <button className={formStyles.button} onClick={onClose}>Cerrar</button>
         </div>
     </div>
 )
