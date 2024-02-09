@@ -1,5 +1,5 @@
-import styles from "@/styles/styles.module.css"
-import IndexPage from "@/components/IndexPage"
+import styles from "@/styles/styles.module.css";
+import IndexPage from "@/components/IndexPage";
 
 export default function Home() {
   return (
