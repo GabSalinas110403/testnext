@@ -1,5 +1,7 @@
 import styles from "@/styles/styles.module.css";
 import IndexPage from "@/components/IndexPage";
+import Login from '@/components/Login';
+import Register from '@/components/Registro';
 
 export default function Home() {
   return (
